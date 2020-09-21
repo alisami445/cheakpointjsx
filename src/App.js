@@ -1,25 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ddd  from './oik.png'
+import ReactPlayer from 'react-player'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <>
+  <div style={{border:"solid 1px black",maxWidth:"100vw"}}>
+    <h1 className="title red">Your Name here</h1>
+    <br />
+    <img src={ddd} style={{widht:"200px",height:"200px"}} />
+    <br />
+    <img src={ddd} style={{widht:"200px",height:"200px"}} />
+  </div>
+  <ReactPlayer className="qwert" width="320" height="240"    controls url='https://youtu.be/7sDY4m8KNLc' />
+
+  </>
   );
 }
 
